@@ -1,0 +1,20 @@
+{
+    "name": "Glassdoor unlocker",
+    "manifest_version": 3,
+    "version": "0.1.0",
+    "description": "Glassdoor banner and scrolling block remover",
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "Glassdoor unlocker"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.glassdoor.com/*"
+            ],
+            "js": [
+                "remover.js"
+            ]
+        }
+    ]
+}
